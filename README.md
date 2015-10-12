@@ -1,0 +1,50 @@
+# predcomp3
+Developing Data Product - Course Project
+
+---
+title: "Developing Data Product - Course Project"
+author: "Marcos Vanine Nader"
+date: "October, 10th 2015"
+output: html_document
+---
+#Comparison of prediction algorithms and parameters for the Iris dataset.
+
+
+This application is based on the Machine Learning Course. The course project consisted of applying prediction algorithms with a variety of parameters and methods in order to find out which combination of these artifacts is more appropriate for the input data set. The dataset was a measurement from wearable devices when someone was practicing exercises in some classes of execution (just one correct among 5 classes).
+
+
+Therefore, based on this interesting problem, I decided to develop an application that permits the user to choose parameters, methods and algorithms, process the data partition to separate train and test data set, run the train algorithm and finally generate the results. 
+The user analyzes these results and after some interactions varying the input values, determine one or more good solutions for the prediction.
+
+
+I used the Iris database instead the original dataset because the latter is too big, which causes a long time to run the train algorithms in a simple machine.
+
+
+##Application Input
+
+
+Input types for the application are:
+
+* Percentage of the source file data to be used for Training and hence to the test. This parameter varies from 50% to 90%, the default equals to 70%.
+* Training method and can be bootstrap and cross-validation - in the latter case, the variations are k = 5 and k = 10, recommended the by the reference book in the Machine Learning course.
+* Algorithms used for training are: (1) Random forest (rf); (2) Boosting with trees (gbm); (3) Tree bag (treebag); (4) Model Based Prediction (lda).
+
+
+## Application Output
+
+
+* Displays the Confusion Matrix where the goal will correct classification of the species as a function of the parameters.
+* Accuracy attribute value.
+* Graph indicating the correct prediction or not depending on the length and width of the petals.
+
+
+## User tips
+
+
+Change the parameters in the input form (one at each time) and analyze the results:
+
+
+* In the confusion matrix, check how many errors exist when the algorithm is applied to the test dataset.
+* The accuracy value: next to one is good (it is 1 when there is no error in the test data set).
+* The graph shows the errors in function of petal dimensions. It is interesting to see the cases that the algorithm makes the confusion.
+
