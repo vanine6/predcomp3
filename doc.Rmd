@@ -1,7 +1,7 @@
 ---
 title: "Developing Data Product - Course Project"
 author: "Marcos Vanine Nader"
-date: "October, 10th 2015"
+date: "October, 14th 2015"
 output: html_document
 ---
 #Comparison of prediction algorithms and parameters for the Iris dataset.
@@ -23,7 +23,7 @@ I used the Iris database instead the original dataset because the latter is too 
 Input types for the application are:
 
 * Percentage of the source file data to be used for Training and hence to the test. This parameter varies from 50% to 90%, the default equals to 70%.
-* Training method and can be bootstrap and cross-validation - in the latter case, the variations are k = 5 and k = 10, recommended the by the reference book in the Machine Learning course.
+* Training Control Method and can be bootstrap and cross-validation - in the latter case, the variations are k = 5 and k = 10, recommended the by the reference book in the Machine Learning course.
 * Algorithms used for training are: (1) Random forest (rf); (2) Boosting with trees (gbm); (3) Tree bag (treebag); (4) Model Based Prediction (lda).
 
 
@@ -44,4 +44,13 @@ Change the parameters in the input form (one at each time) and analyze the resul
 * In the confusion matrix, check how many errors exist when the algorithm is applied to the test dataset.
 * The accuracy value: next to one is good (it is 1 when there is no error in the test data set).
 * The graph shows the errors in function of petal dimensions. It is interesting to see the cases that the algorithm makes the confusion.
+
+
+## R code
+
+The ui.R and server.R files are available on:
+
+[https://github.com/vanine6/predcomp3](https://github.com/vanine6/predcomp3)
+
+
 

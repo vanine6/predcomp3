@@ -16,7 +16,7 @@ fluidPage(
     sliderInput('trainSize', 'Training File Size (%)', min=50, max=90,
                 value=70),
     
-    selectInput('trainMethod', 'Training Method',
+    selectInput('trainMethod', 'Training Control Method',
                 choices = list("Bootstrap"= 1, "5-Fold CV" = 2, "10-Fold CV" = 3), 
                 selected=1),
     
